@@ -107,6 +107,9 @@ header ul li a:focus{
 }
 .hero_image_section{
     background-color: #2E2F42;
+    background-image: linear-gradient( rgba(46, 47, 66, 0.7)), url(../images/hero_section_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .hero_title{
     color: #FFFFFF;
