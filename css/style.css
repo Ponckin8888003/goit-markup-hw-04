@@ -130,6 +130,9 @@ header ul li a:focus{
 .team_card{
     background-color: #FFFFFF;
 }
+.team_card:hover{
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 8%), 0px 1px 1px 0px rgba(46, 47, 66, 16%), 0px 2px 1px 0px rgba(46, 47, 66, 8%);
+}
 .footer{
     background-color: #2E2F42;
 }
@@ -155,6 +158,17 @@ img{
 .menu_navigation{
     display: flex;
     gap: 40px
+}
+.menu_items::after{
+    display: block;
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+.menu_items:hover::after{
+    background-color: #404BBF;
 }
 .menu_items{
     padding: 24px 0;
@@ -201,6 +215,16 @@ header .container{
 .banner_item {
     width: calc((100% - 72px) / 4);
 }
+.svg_banner_item_container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4F4FD;
+    border: 1px solid #8E8F99;
+    height: 112px;
+    border-radius: 4px;
+}
 .section_one_item {
     flex-basis: calc((100% - 72px) / 4);
 }
@@ -246,6 +270,27 @@ header .container{
 .team_card_description_container .body{
     text-align: center;
 }
+.svg_team_container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.svg_icon_wrapper_block{
+    width: 40px;
+    background-color: #4D5AE5;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.svg_icon_wrapper_block svg{
+    fill: #F4F4FD;
+}
+.svg_icon_wrapper_block:hover{
+    background-color: #404BBF;
+    cursor: pointer;
+}
 .our_portfolio{
     padding: 120px 0 120px 0;
 }
@@ -274,6 +319,7 @@ header .container{
 }
 .footer{
     padding: 100px 0;
+    display: flex;
 }
 .footer .container{
     display: block;
@@ -284,4 +330,10 @@ header .container{
 }
 .footer .body{
     max-width: 264px;
+}
+.social_media_container p{
+    color: #FFFFFF;
+}
+.icons_container{
+    display: flex;
 }
