@@ -375,7 +375,7 @@ header .container{
     display: flex;
     align-items: baseline;
 }
-.container{
+.footer_logos_container{
     display: block;
     margin-right: 120px;
 }
@@ -385,6 +385,8 @@ header .container{
 }
 .footer .body{
     max-width: 264px;
+}
+footer .body_medium{
     margin-bottom: 16px;
 }
 .social_media_container p{
@@ -393,4 +395,8 @@ header .container{
 .icons_container{
     display: flex;
     gap: 16px;
+}
+footer .svg_icon_wrapper_block a:hover,
+footer .svg_icon_wrapper_block a:focus{
+    background-color: #31d0aa;
 }
