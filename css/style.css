@@ -380,14 +380,12 @@ header .container{
 }
 .footer .logo{
     display: inline-block;
-    margin-bottom: 16px;
 }
 .footer .body{
     max-width: 264px;
-    margin-bottom: 16px;
 }
-footer .body_medium{
-    margin-bottom: 16px;
+.social_media_title{
+     margin-bottom: 16px;
 }
 .social_media_container p{
     color: #FFFFFF;
