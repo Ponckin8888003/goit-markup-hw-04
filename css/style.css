@@ -375,7 +375,7 @@ header .container{
     display: flex;
     align-items: baseline;
 }
-.footer .container{
+.container{
     display: block;
     margin-right: 120px;
 }
@@ -385,10 +385,12 @@ header .container{
 }
 .footer .body{
     max-width: 264px;
+    margin-bottom: 16px;
 }
 .social_media_container p{
     color: #FFFFFF;
 }
 .icons_container{
     display: flex;
+    gap: 16px;
 }
