@@ -273,7 +273,7 @@ header .container{
     gap: 24px;
 }
 .team_section_list li {
-    flex-basis: calc((100% - 72px) / 4);
+    /* flex-basis: calc((100% - 72px) / 4); */
     border-radius: 0px 0px 4px 4px;
 }
 .team_card_description_container{
@@ -294,9 +294,7 @@ header .container{
 }
 .svg_icon_wrapper_block{
     width: 40px;
-    
     height: 40px;
-    border-radius: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -309,6 +307,7 @@ header .container{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .svg_icon_wrapper_block a:hover,
 .svg_icon_wrapper_block a:focus{
@@ -316,8 +315,6 @@ header .container{
 }
 .svg_icon_wrapper_block a svg{
     fill: #F4F4FD;
-    width: 16px;
-    height: 16px;
 }
 .our_portfolio{
     padding: 120px 0 120px 0;
@@ -334,8 +331,34 @@ header .container{
     column-gap: 24px; 
     row-gap: 48px;
 }
-.portfolio_list_item {
+.portfolio_list_items {
     width: calc((100% - 48px) / 3);
+}
+.portfolio_list_items:hover{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio_hideen_item{
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    padding: 40px 32px;
+    background-color: #4d5ae5;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio_list_items:hover .portfolio_hideen_item{
+    transform: translateY(0%);
+}
+.portfolio_list_img_wrap_container{
+    position: relative;
+    overflow: hidden;
 }
 .portfolio_list_description_container{
     padding: 32px 16px;
@@ -347,10 +370,14 @@ header .container{
 }
 .footer{
     padding: 100px 0;
+}
+.footer_wrapper_container{
     display: flex;
+    align-items: baseline;
 }
 .footer .container{
     display: block;
+    margin-right: 120px;
 }
 .footer .logo{
     display: inline-block;
